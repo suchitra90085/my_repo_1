@@ -1,0 +1,62 @@
+/* General container styles */
+.contact-container {
+    text-align: center;
+    padding: 20px;
+}
+  
+.contact-heading {
+    font-size: 2rem; /* Heading size */
+    margin-bottom: 20px; /* Space between heading and icons */
+    color: #dcd2d2; 
+    text-align: center;
+    font-weight: bold;
+}
+  
+/* Style the contact icons */
+.contact-icons {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center icons horizontally */
+    gap: 30px; /* Space between icons */
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+}
+  
+.contact-icons a {
+    display: inline-block; /* Make each icon clickable */
+    position: relative;
+}
+  
+.contact-icons img {
+    width: 50px; /* Icon size */
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth scale effect */
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+  
+.contact-icons img:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+/* Tooltip Styling */
+.tooltip {
+    visibility: hidden; /* Initially hide tooltip */
+    position: absolute;
+    top: 100%; /* Position directly below the icon */
+    left: 50%; /* Horizontally center it */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s ease 0.3s; /* Smooth fade-in effect */
+}
+
+/* Show tooltip when icon is hovered */
+.contact-icons a:hover .tooltip {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Make tooltip visible */
+    transition-delay: 0s; /* Ensure tooltip shows immediately when hovered */
+}

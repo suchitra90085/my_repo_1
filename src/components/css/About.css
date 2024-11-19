@@ -1,0 +1,88 @@
+/* src/screens/Service/Components/Service.css */
+
+/* Apply the background image and styles to the entire page */
+/* body {
+    background-image: url('/exbg.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+} */
+
+/* Make sure the app-container takes up the full height of the screen */
+.app-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align content from the top */
+    align-items: center;
+    min-height: 15 0vh;
+    padding: 1px;
+    box-sizing: border-box; /* To include padding in the height calculation */
+}
+
+/* Style for the heading */
+.title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 20px; /* Add space below the title */
+    /* color: rgb(80, 75, 75); */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional text shadow for readability */
+}
+h2{
+    text-align: center;
+    color: rgb(184, 177, 177);
+
+}
+
+/* Content container styling */
+.content-container {
+    background-color: rgba(4, 4, 4, 0.7); /* Transparent black background */
+    color: rgb(241, 221, 221);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 9px rgba(255, 255, 255, 0.8); /* White shadow */
+    max-width: 1000px;
+    width: 90%;
+}
+
+
+/* Paragraph and text styling */
+.description,
+.passion {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Skills container styling */
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Optional responsiveness: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 1.5rem; /* Adjust padding on smaller screens */
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description, .passion {
+        font-size: 1rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; /* Stack the skills list on smaller screens */
+    }
+}

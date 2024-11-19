@@ -1,0 +1,30 @@
+.container {
+  position: relative; /* Allows absolute positioning of child elements */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent any content from overflowing */
+}
+
+.about-image {
+  position: absolute; /* Position the image absolutely inside the container */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 105%; /* Make image take full width */
+  height: 95%; /* Make image take full height */
+  object-fit: cover; /* Cover the container without distortion */
+  object-position: center; /* Center the image */
+}
+
+
+.about-text {
+  position: absolute; /* Position text absolutely inside the container */
+  top: 20px; /* Adjust the top spacing */
+  left: 20px; /* Adjust left spacing */
+  color: rgb(255, 255, 255); /* White text color for visibility */
+  background-color: rgba(39, 38, 38, 0.5); /* Semi-transparent background for readability */
+  padding: 20px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the text box */
+  font-size: 1.5rem; /* Adjust font size */
+  max-width: 80%; /* Limit the width of the text box */
+  word-wrap: break-word; /* Wrap long words */
+}
